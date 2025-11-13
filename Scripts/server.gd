@@ -44,5 +44,24 @@ func createRoom(playerName, playerDeck, password):
 	sendUpdatedRooms()
 
 @rpc("any_peer")
-func roomsUpdated():
+func joinRoom(creatingPlayerID, password):
+	if rooms[creatingPlayerID].players.joinedPlayer != null:
+		rpc_id(multiplayer.get_remote_sender_id(), "joinReply", "occupied")
+	elif rooms[creatingPlayerID].password != password:
+		rpc_id(multiplayer.get_remote_sender_id(), "joinReply", "invalidPassword")
+	else:
+		rpc_id(multiplayer.get_remote_sender_id(), "joinReply", "joined")
+		rpc_id(creatingPlayerID, "rivalJoined")
+		rooms[creatingPlayerID].players.joinedPlayer = multiplayer.get_remote_sender_id()
+
+@rpc("any_peer")
+func roomsUpdated(_rooms):
+	pass
+	
+@rpc("any_peer")
+func rivalJoined():
+	pass
+
+@rpc("any_peer")
+func joinReply(_status):
 	pass
