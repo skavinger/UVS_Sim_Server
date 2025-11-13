@@ -4,5 +4,611 @@
 
 [node name="Main" type="Node"]
 
+[node name="ConnectWindowHolder" type="Node" parent="."]
+
+[node name="SyncFunctions" type="Node" parent="ConnectWindowHolder"]
+
+[node name="Game" type="Node" parent="ConnectWindowHolder"]
+
+[node name="Field" type="Node" parent="ConnectWindowHolder/Game"]
+
+[node name="PlayArea" type="Node" parent="ConnectWindowHolder/Game/Field"]
+
+[node name="AnimationManager" type="Node" parent="ConnectWindowHolder/Game/Field"]
+
+[node name="CardInspector" type="Node" parent="ConnectWindowHolder/Game/Field"]
+
+[node name="TextArea" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector"]
+
+[node name="Background" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector/TextArea"]
+
+[node name="ScrollContainer" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector/TextArea"]
+
+[node name="Cardtext" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector/TextArea/ScrollContainer"]
+
+[node name="TextTabGroup" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector/TextArea"]
+
+[node name="TextTab" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector/TextArea/TextTabGroup"]
+
+[node name="Arrows" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector/TextArea/TextTabGroup"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector/TextArea/TextTabGroup"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector/TextArea/TextTabGroup/Area2D"]
+
+[node name="Card" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector"]
+
+[node name="InspectorTabGroup" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector"]
+
+[node name="InspectorTab" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector/InspectorTabGroup"]
+
+[node name="Arrows" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector/InspectorTabGroup"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector/InspectorTabGroup"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/CardInspector/InspectorTabGroup/Area2D"]
+
+[node name="SearchBox" type="Node" parent="ConnectWindowHolder/Game/Field"]
+
+[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/Game/Field/SearchBox"]
+
+[node name="Control" type="Node" parent="ConnectWindowHolder/Game/Field/SearchBox"]
+
+[node name="ScrollContainer" type="Node" parent="ConnectWindowHolder/Game/Field/SearchBox/Control"]
+
+[node name="HBoxContainer" type="Node" parent="ConnectWindowHolder/Game/Field/SearchBox/Control/ScrollContainer"]
+
+[node name="Label" type="Node" parent="ConnectWindowHolder/Game/Field/SearchBox"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/SearchBox"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/SearchBox/Area2D"]
+
+[node name="Tracker" type="Node" parent="ConnectWindowHolder/Game/Field"]
+
+[node name="Background" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker"]
+
+[node name="DamageVal" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker"]
+
+[node name="Damage" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/DamageVal"]
+
+[node name="DamageLabel" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/DamageVal"]
+
+[node name="Plus" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/DamageVal"]
+
+[node name="Plus" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/DamageVal/Plus"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/DamageVal/Plus"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/DamageVal/Plus/Area2D"]
+
+[node name="Minus" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/DamageVal"]
+
+[node name="Minus" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/DamageVal/Minus"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/DamageVal/Minus"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/DamageVal/Minus/Area2D"]
+
+[node name="SpeedVal" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker"]
+
+[node name="SpeedLabel" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/SpeedVal"]
+
+[node name="Plus" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/SpeedVal"]
+
+[node name="Plus" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/SpeedVal/Plus"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/SpeedVal/Plus"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/SpeedVal/Plus/Area2D"]
+
+[node name="Minus" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/SpeedVal"]
+
+[node name="Minus" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/SpeedVal/Minus"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/SpeedVal/Minus"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/SpeedVal/Minus/Area2D"]
+
+[node name="AttackZone" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker"]
+
+[node name="Speed" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/AttackZone"]
+
+[node name="High" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/AttackZone"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/AttackZone/High"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/AttackZone/High/Area2D"]
+
+[node name="Mid" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/AttackZone"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/AttackZone/Mid"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/AttackZone/Mid/Area2D"]
+
+[node name="Low" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/AttackZone"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/AttackZone/Low"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/AttackZone/Low/Area2D"]
+
+[node name="ArrowsNode" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker"]
+
+[node name="Arrows" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/ArrowsNode"]
+
+[node name="ArrowArea" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/ArrowsNode"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/ArrowsNode/ArrowArea"]
+
+[node name="HealthAdjuster" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker"]
+
+[node name="RichTextLabel" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/HealthAdjuster"]
+
+[node name="LineEdit" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/HealthAdjuster"]
+
+[node name="Plus" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/HealthAdjuster"]
+
+[node name="Plus" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/HealthAdjuster/Plus"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/HealthAdjuster/Plus"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/HealthAdjuster/Plus/Area2D"]
+
+[node name="Minus" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/HealthAdjuster"]
+
+[node name="Minus" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/HealthAdjuster/Minus"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/HealthAdjuster/Minus"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/HealthAdjuster/Minus/Area2D"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/Area2D"]
+
+[node name="CollisionShape2D2" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/Area2D"]
+
+[node name="CollisionShape2D3" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/Area2D"]
+
+[node name="CollisionShape2D4" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/Area2D"]
+
+[node name="CollisionShape2D5" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/Area2D"]
+
+[node name="CollisionShape2D6" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/Area2D"]
+
+[node name="CollisionShape2D7" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/Area2D"]
+
+[node name="BlockStates" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker"]
+
+[node name="FullBlock" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/BlockStates"]
+
+[node name="PartialBlock" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/BlockStates"]
+
+[node name="Unblocked" type="Node" parent="ConnectWindowHolder/Game/Field/Tracker/BlockStates"]
+
+[node name="RivalHealth" type="Node" parent="ConnectWindowHolder/Game/Field"]
+
+[node name="Icon" type="Node" parent="ConnectWindowHolder/Game/Field/RivalHealth"]
+
+[node name="Label" type="Node" parent="ConnectWindowHolder/Game/Field/RivalHealth"]
+
+[node name="PlayerHealth" type="Node" parent="ConnectWindowHolder/Game/Field"]
+
+[node name="Icon" type="Node" parent="ConnectWindowHolder/Game/Field/PlayerHealth"]
+
+[node name="Label" type="Node" parent="ConnectWindowHolder/Game/Field/PlayerHealth"]
+
+[node name="Chat" type="Node" parent="ConnectWindowHolder/Game/Field"]
+
+[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/Game/Field/Chat"]
+
+[node name="LineEdit" type="Node" parent="ConnectWindowHolder/Game/Field/Chat"]
+
+[node name="ScrollContainer" type="Node" parent="ConnectWindowHolder/Game/Field/Chat"]
+
+[node name="RichTextLabel" type="Node" parent="ConnectWindowHolder/Game/Field/Chat/ScrollContainer"]
+
+[node name="VScrollBar" type="Node" parent="ConnectWindowHolder/Game/Field/Chat"]
+
+[node name="RichTextLabel" type="Node" parent="ConnectWindowHolder/Game/Field/Chat/VScrollBar"]
+
+[node name="DisplayChat" type="Node" parent="ConnectWindowHolder/Game/Field/Chat"]
+
+[node name="DisplayCombo" type="Node" parent="ConnectWindowHolder/Game/Field/Chat"]
+
+[node name="DiscplayLog" type="Node" parent="ConnectWindowHolder/Game/Field/Chat"]
+
+[node name="TurnSequence" type="Node" parent="ConnectWindowHolder/Game/Field"]
+
+[node name="TurnPlayer" type="Node" parent="ConnectWindowHolder/Game/Field/TurnSequence"]
+
+[node name="TurnSequence" type="Node" parent="ConnectWindowHolder/Game/Field/TurnSequence"]
+
+[node name="AdvancePhase" type="Node" parent="ConnectWindowHolder/Game/Field/TurnSequence"]
+
+[node name="AdvanceArea" type="Node" parent="ConnectWindowHolder/Game/Field/TurnSequence/AdvancePhase"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/TurnSequence/AdvancePhase/AdvanceArea"]
+
+[node name="RevertPhase" type="Node" parent="ConnectWindowHolder/Game/Field/TurnSequence"]
+
+[node name="RevertArea" type="Node" parent="ConnectWindowHolder/Game/Field/TurnSequence/RevertPhase"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/TurnSequence/RevertPhase/RevertArea"]
+
+[node name="AttackSeq" type="Node" parent="ConnectWindowHolder/Game/Field"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/AttackSeq"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/AttackSeq/Area2D"]
+
+[node name="EffectsWindow" type="Node" parent="ConnectWindowHolder/Game/Field"]
+
+[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/Game/Field/EffectsWindow"]
+
+[node name="X button" type="Node" parent="ConnectWindowHolder/Game/Field/EffectsWindow"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/EffectsWindow/X button"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/EffectsWindow/X button/Area2D"]
+
+[node name="Masking" type="Node" parent="ConnectWindowHolder/Game/Field/EffectsWindow"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Field/EffectsWindow/Masking"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/EffectsWindow/Masking/Area2D"]
+
+[node name="Area2D2" type="Node" parent="ConnectWindowHolder/Game/Field/EffectsWindow/Masking"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Field/EffectsWindow/Masking/Area2D2"]
+
+[node name="EffectList" type="Node" parent="ConnectWindowHolder/Game/Field/EffectsWindow"]
+
+[node name="Tab" type="Node" parent="ConnectWindowHolder/Game/Field/EffectsWindow/EffectList"]
+
+[node name="WindowTitle" type="Node" parent="ConnectWindowHolder/Game/Field/EffectsWindow"]
+
+[node name="Player" type="Node" parent="ConnectWindowHolder/Game"]
+
+[node name="CardManager" type="Node" parent="ConnectWindowHolder/Game/Player"]
+
+[node name="Transit" type="Node" parent="ConnectWindowHolder/Game/Player"]
+
+[node name="Hand" type="Node" parent="ConnectWindowHolder/Game/Player"]
+
+[node name="Cardpool" type="Node" parent="ConnectWindowHolder/Game/Player"]
+
+[node name="Stage" type="Node" parent="ConnectWindowHolder/Game/Player"]
+
+[node name="Deck" type="Node" parent="ConnectWindowHolder/Game/Player"]
+
+[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/Game/Player/Deck"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Player/Deck"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Player/Deck/Area2D"]
+
+[node name="Buttons" type="Node" parent="ConnectWindowHolder/Game/Player/Deck"]
+
+[node name="Discard" type="Node" parent="ConnectWindowHolder/Game/Player"]
+
+[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/Game/Player/Discard"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Player/Discard"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Player/Discard/Area2D"]
+
+[node name="Buttons" type="Node" parent="ConnectWindowHolder/Game/Player/Discard"]
+
+[node name="Removed" type="Node" parent="ConnectWindowHolder/Game/Player"]
+
+[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/Game/Player/Removed"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Player/Removed"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Player/Removed/Area2D"]
+
+[node name="Buttons" type="Node" parent="ConnectWindowHolder/Game/Player/Removed"]
+
+[node name="Momentum" type="Node" parent="ConnectWindowHolder/Game/Player"]
+
+[node name="Rival" type="Node" parent="ConnectWindowHolder/Game"]
+
+[node name="AnimationManager2" type="Node" parent="ConnectWindowHolder/Game/Rival"]
+
+[node name="RivalCardManager" type="Node" parent="ConnectWindowHolder/Game/Rival"]
+
+[node name="RivalTransit" type="Node" parent="ConnectWindowHolder/Game/Rival"]
+
+[node name="RivalDeck" type="Node" parent="ConnectWindowHolder/Game/Rival"]
+
+[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/Game/Rival/RivalDeck"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Rival/RivalDeck"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Rival/RivalDeck/Area2D"]
+
+[node name="Buttons" type="Node" parent="ConnectWindowHolder/Game/Rival/RivalDeck"]
+
+[node name="RivalHand" type="Node" parent="ConnectWindowHolder/Game/Rival"]
+
+[node name="RivalDiscard" type="Node" parent="ConnectWindowHolder/Game/Rival"]
+
+[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/Game/Rival/RivalDiscard"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Rival/RivalDiscard"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Rival/RivalDiscard/Area2D"]
+
+[node name="Buttons" type="Node" parent="ConnectWindowHolder/Game/Rival/RivalDiscard"]
+
+[node name="RivalRemoved" type="Node" parent="ConnectWindowHolder/Game/Rival"]
+
+[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/Game/Rival/RivalRemoved"]
+
+[node name="Area2D" type="Node" parent="ConnectWindowHolder/Game/Rival/RivalRemoved"]
+
+[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/Game/Rival/RivalRemoved/Area2D"]
+
+[node name="Buttons" type="Node" parent="ConnectWindowHolder/Game/Rival/RivalRemoved"]
+
+[node name="RivalCardpool" type="Node" parent="ConnectWindowHolder/Game/Rival"]
+
+[node name="RivalMomentum" type="Node" parent="ConnectWindowHolder/Game/Rival"]
+
+[node name="RivalStage" type="Node" parent="ConnectWindowHolder/Game/Rival"]
+
+[node name="InputManager" type="Node" parent="ConnectWindowHolder"]
+
+[node name="Back" type="Node" parent="ConnectWindowHolder"]
+
+[node name="OpenGames" type="Node" parent="ConnectWindowHolder"]
+
+[node name="ScrollContainer" type="Node" parent="ConnectWindowHolder/OpenGames"]
+
+[node name="VBoxContainer" type="Node" parent="ConnectWindowHolder/OpenGames/ScrollContainer"]
+
+[node name="CreateRoom" type="Node" parent="ConnectWindowHolder"]
+
+[node name="PasswordLabel" type="Node" parent="ConnectWindowHolder"]
+
+[node name="Password" type="Node" parent="ConnectWindowHolder"]
+
+[node name="StartWindowHolder" type="Node" parent="."]
+
+[node name="Connect" type="Node" parent="StartWindowHolder"]
+
+[node name="DeckBuilder" type="Node" parent="StartWindowHolder"]
+
+[node name="DownloadData" type="Node" parent="StartWindowHolder"]
+
+[node name="StartButton" type="Node" parent="StartWindowHolder"]
+
+[node name="DeckbuilderHolder" type="Node" parent="."]
+
+[node name="DeckBuilder" type="Node" parent="DeckbuilderHolder"]
+
+[node name="FilterWindow" type="Node" parent="DeckbuilderHolder/DeckBuilder"]
+
+[node name="Background" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow"]
+
+[node name="CloseFilter" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow"]
+
+[node name="Menus" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow"]
+
+[node name="CardName" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="Label" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/CardName"]
+
+[node name="CardName" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/CardName"]
+
+[node name="CardText" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="Label" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/CardText"]
+
+[node name="CardText" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/CardText"]
+
+[node name="Formats" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="Sets" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="CardType" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="Symbols" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="SymbolsAttuned" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="KeywordTraits" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="KeywordAbilities" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="KeywordCount" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="KeywordCountLabel" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/KeywordCount"]
+
+[node name="KeywordCount><=" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/KeywordCount"]
+
+[node name="KeywordCountValue" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/KeywordCount"]
+
+[node name="AbilityCount" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="AbilityCountLabel" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/AbilityCount"]
+
+[node name="AbilityCount><=" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/AbilityCount"]
+
+[node name="AbilityCountValue" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/AbilityCount"]
+
+[node name="BlockZone" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="BlockMod" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="BlockModLabel" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/BlockMod"]
+
+[node name="BlockMod><=" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/BlockMod"]
+
+[node name="BlockModValue" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/BlockMod"]
+
+[node name="Speed" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="SpeedLabel" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Speed"]
+
+[node name="Speed><=" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Speed"]
+
+[node name="SpeedValue" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Speed"]
+
+[node name="AttackZone" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="Damage" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="DamageLabel" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Damage"]
+
+[node name="Damage><=" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Damage"]
+
+[node name="DamageValue" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Damage"]
+
+[node name="Difficulty" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="DiffLabel" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Difficulty"]
+
+[node name="Diff><=" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Difficulty"]
+
+[node name="DiffValue" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Difficulty"]
+
+[node name="Check" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="CheckLabel" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Check"]
+
+[node name="Check><=" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Check"]
+
+[node name="CheckValue" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Check"]
+
+[node name="HandSize" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="HandSizeLabel" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/HandSize"]
+
+[node name="HandSize><=" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/HandSize"]
+
+[node name="HandSizeValue" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/HandSize"]
+
+[node name="Health" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus"]
+
+[node name="HealthLabel" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Health"]
+
+[node name="Health><=" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Health"]
+
+[node name="HealthValue" type="Node" parent="DeckbuilderHolder/DeckBuilder/FilterWindow/Menus/Health"]
+
+[node name="Background" type="Node" parent="DeckbuilderHolder/DeckBuilder"]
+
+[node name="Back" type="Node" parent="DeckbuilderHolder/DeckBuilder"]
+
+[node name="Filter" type="Node" parent="DeckbuilderHolder/DeckBuilder"]
+
+[node name="DeckDetails" type="Node" parent="DeckbuilderHolder/DeckBuilder"]
+
+[node name="Character" type="Node" parent="DeckbuilderHolder/DeckBuilder/DeckDetails"]
+
+[node name="DeckName" type="Node" parent="DeckbuilderHolder/DeckBuilder/DeckDetails"]
+
+[node name="CharacterName" type="Node" parent="DeckbuilderHolder/DeckBuilder/DeckDetails"]
+
+[node name="Timer" type="Node" parent="DeckbuilderHolder/DeckBuilder/DeckDetails"]
+
+[node name="Cardcounts" type="Node" parent="DeckbuilderHolder/DeckBuilder"]
+
+[node name="CharacterCount" type="Node" parent="DeckbuilderHolder/DeckBuilder/Cardcounts"]
+
+[node name="ActionCount" type="Node" parent="DeckbuilderHolder/DeckBuilder/Cardcounts"]
+
+[node name="AssetCount" type="Node" parent="DeckbuilderHolder/DeckBuilder/Cardcounts"]
+
+[node name="AttackCount" type="Node" parent="DeckbuilderHolder/DeckBuilder/Cardcounts"]
+
+[node name="BackupCount" type="Node" parent="DeckbuilderHolder/DeckBuilder/Cardcounts"]
+
+[node name="FoundationCount" type="Node" parent="DeckbuilderHolder/DeckBuilder/Cardcounts"]
+
+[node name="DecklistBox" type="Node" parent="DeckbuilderHolder/DeckBuilder"]
+
+[node name="ScrollContainer" type="Node" parent="DeckbuilderHolder/DeckBuilder/DecklistBox"]
+
+[node name="GridContainer" type="Node" parent="DeckbuilderHolder/DeckBuilder/DecklistBox/ScrollContainer"]
+
+[node name="SideBoardList" type="Node" parent="DeckbuilderHolder/DeckBuilder"]
+
+[node name="ScrollContainer" type="Node" parent="DeckbuilderHolder/DeckBuilder/SideBoardList"]
+
+[node name="GridContainer" type="Node" parent="DeckbuilderHolder/DeckBuilder/SideBoardList/ScrollContainer"]
+
+[node name="CardDatabaseList" type="Node" parent="DeckbuilderHolder/DeckBuilder"]
+
+[node name="PageBack" type="Node" parent="DeckbuilderHolder/DeckBuilder/CardDatabaseList"]
+
+[node name="PageForward" type="Node" parent="DeckbuilderHolder/DeckBuilder/CardDatabaseList"]
+
+[node name="PageCount" type="Node" parent="DeckbuilderHolder/DeckBuilder/CardDatabaseList"]
+
+[node name="ScrollContainer" type="Node" parent="DeckbuilderHolder/DeckBuilder/CardDatabaseList"]
+
+[node name="GridContainer" type="Node" parent="DeckbuilderHolder/DeckBuilder/CardDatabaseList/ScrollContainer"]
+
+[node name="CardInspector" type="Node" parent="DeckbuilderHolder/DeckBuilder"]
+
+[node name="CardArt" type="Node" parent="DeckbuilderHolder/DeckBuilder/CardInspector"]
+
+[node name="ScrollContainer" type="Node" parent="DeckbuilderHolder/DeckBuilder/CardInspector"]
+
+[node name="CardText" type="Node" parent="DeckbuilderHolder/DeckBuilder/CardInspector/ScrollContainer"]
+
+[node name="Save_Load" type="Node" parent="DeckbuilderHolder/DeckBuilder"]
+
+[node name="Saves" type="Node" parent="DeckbuilderHolder/DeckBuilder/Save_Load"]
+
+[node name="Save" type="Node" parent="DeckbuilderHolder/DeckBuilder/Save_Load"]
+
+[node name="Load" type="Node" parent="DeckbuilderHolder/DeckBuilder/Save_Load"]
+
+[node name="DownloadWindowHolder" type="Node" parent="."]
+
+[node name="DownloaderWindow" type="Node" parent="DownloadWindowHolder"]
+
+[node name="Back" type="Node" parent="DownloadWindowHolder/DownloaderWindow"]
+
+[node name="SetModuleList" type="Node" parent="DownloadWindowHolder/DownloaderWindow"]
+
+[node name="ScrollContainer" type="Node" parent="DownloadWindowHolder/DownloaderWindow/SetModuleList"]
+
+[node name="VBoxContainer" type="Node" parent="DownloadWindowHolder/DownloaderWindow/SetModuleList/ScrollContainer"]
+
+[node name="RichTextLabel" type="Node" parent="DownloadWindowHolder/DownloaderWindow"]
+
+[node name="UpdateAll" type="Node" parent="DownloadWindowHolder/DownloaderWindow"]
+
+[node name="SettingsWindowHolder" type="Node" parent="."]
+
+[node name="SettingsWindow" type="Node" parent="SettingsWindowHolder"]
+
+[node name="Back" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
+
+[node name="NameLabel" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
+
+[node name="PlayerName" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
+
+[node name="PlayerChatColorLabel" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
+
+[node name="PlayerChatColor" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
+
+[node name="PlayerEventColorLabel" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
+
+[node name="PlayerEventColor" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
+
+[node name="RivalChatColorLabel" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
+
+[node name="RivalChatColor" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
+
+[node name="RivalEventColorLabel" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
+
+[node name="RivalEventColor" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
+
 [node name="Server" type="Node" parent="."]
 script = ExtResource("1_6uhi8")
