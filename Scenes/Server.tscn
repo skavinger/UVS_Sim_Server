@@ -1,12 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://b0midug4yna3a"]
+[gd_scene load_steps=16 format=3 uid="uid://b0midug4yna3a"]
 
 [ext_resource type="Script" uid="uid://cw54dhh0d47x1" path="res://Scripts/plus.gd" id="1_6hh76"]
-[ext_resource type="Script" uid="uid://nxpnyou6r5e2" path="res://Scripts/server.gd" id="1_6uhi8"]
 [ext_resource type="Script" uid="uid://cpmo8m2ka1krl" path="res://Scripts/card_manager.gd" id="1_k3tnb"]
 [ext_resource type="Script" uid="uid://cpan18dp383a7" path="res://Scripts/chat.gd" id="1_ruubs"]
-[ext_resource type="Script" uid="uid://k6u7crjdlbs1" path="res://Scenes/main.gd" id="1_thl6s"]
+[ext_resource type="Script" uid="uid://k6u7crjdlbs1" path="res://Scripts/main.gd" id="1_thl6s"]
 [ext_resource type="Script" uid="uid://bmr38lx3q6hjb" path="res://Scripts/minus.gd" id="2_5is31"]
-[ext_resource type="Script" uid="uid://l832w4nlmj6j" path="res://Scenes/sync_functions.gd" id="2_53ot5"]
+[ext_resource type="Script" uid="uid://l832w4nlmj6j" path="res://Scripts/sync_functions.gd" id="2_53ot5"]
 [ext_resource type="Script" uid="uid://cetdloq6f6gxw" path="res://Scripts/high.gd" id="3_tbpux"]
 [ext_resource type="Script" uid="uid://cyxijk3ffprqj" path="res://Scripts/plus (2).gd" id="3_yiiyr"]
 [ext_resource type="Script" uid="uid://cncwuttf3iqli" path="res://Scripts/mid.gd" id="4_3j8ku"]
@@ -15,7 +14,7 @@
 [ext_resource type="Script" uid="uid://6sjm84110bqs" path="res://Scripts/rival_card_manager.gd" id="8_ittug"]
 [ext_resource type="Script" uid="uid://ckqwiubkh4p5r" path="res://Scripts/rival_transit.gd" id="9_7mha4"]
 [ext_resource type="Script" uid="uid://d4bneybj3ih47" path="res://Scripts/rival_deck.gd" id="9_18b0c"]
-[ext_resource type="Script" uid="uid://b2nftnu63v4ry" path="res://Scenes/turn_sequence.gd" id="11_w7p2x"]
+[ext_resource type="Script" uid="uid://b2nftnu63v4ry" path="res://Scripts/turn_sequence.gd" id="11_w7p2x"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_thl6s")
@@ -641,6 +640,3 @@ script = ExtResource("9_18b0c")
 [node name="RivalEventColorLabel" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
 
 [node name="RivalEventColor" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
-
-[node name="Server" type="Node" parent="."]
-script = ExtResource("1_6uhi8")

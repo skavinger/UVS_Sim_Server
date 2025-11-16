@@ -2,20 +2,20 @@ extends Node
 
 @rpc("any_peer")
 func flipCard(_cardMeta):
-	pass
+	rpc_id(Server.playerPairs[multiplayer.get_remote_sender_id()], "flipCard", _cardMeta)
 	
 @rpc("any_peer")
 func unflipCard(_cardMeta):
-	pass
+	rpc_id(Server.playerPairs[multiplayer.get_remote_sender_id()], "unflipCard", _cardMeta)
 	
 @rpc("any_peer")
 func commitCard(_cardMeta):
-	pass
+	rpc_id(Server.playerPairs[multiplayer.get_remote_sender_id()], "commitCard", _cardMeta)
 	
 @rpc("any_peer")
 func readyCard(_cardMeta):
-	pass
+	rpc_id(Server.playerPairs[multiplayer.get_remote_sender_id()], "readyCard", _cardMeta)
 	
 @rpc("any_peer")
 func flashRivalCard(_indexID):
-	pass
+	rpc_id(Server.playerPairs[multiplayer.get_remote_sender_id()], "flashRivalCard", _indexID)

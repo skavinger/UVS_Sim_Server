@@ -3,6 +3,7 @@ extends Node
 var multiplayer_peer = ENetMultiplayerPeer.new()
 
 var rooms = {}
+var playerPairs = {}
 
 var roomCount = 0
 
@@ -43,6 +44,10 @@ func createRoom(playerName, playerDeck, password):
 	}
 	sendUpdatedRooms()
 
+func removeRoom(creatingPlayerID):
+	rooms.erase(creatingPlayerID)
+	sendUpdatedRooms()
+
 @rpc("any_peer")
 func joinRoom(creatingPlayerID, password):
 	if rooms[creatingPlayerID].players.joinedPlayer != null:
@@ -52,7 +57,9 @@ func joinRoom(creatingPlayerID, password):
 	else:
 		rpc_id(multiplayer.get_remote_sender_id(), "joinReply", "joined")
 		rpc_id(creatingPlayerID, "rivalJoined")
-		rooms[creatingPlayerID].players.joinedPlayer = multiplayer.get_remote_sender_id()
+		playerPairs[creatingPlayerID] = multiplayer.get_remote_sender_id()
+		playerPairs[multiplayer.get_remote_sender_id()] = creatingPlayerID
+		removeRoom(creatingPlayerID)
 
 @rpc("any_peer")
 func roomsUpdated(_rooms):
