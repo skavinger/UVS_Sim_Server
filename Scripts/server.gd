@@ -86,3 +86,15 @@ func checkPair(player):
 		return false
 	else:
 		return true
+
+@rpc("any_peer")
+func checkIfGameReady():
+	if checkPair(multiplayer.get_remote_sender_id()):
+		rpc_id(multiplayer.get_remote_sender_id(), "gameReady", true)
+		rpc_id(playerPairs[multiplayer.get_remote_sender_id()], "gameReady", true)
+	else:
+		rpc_id(multiplayer.get_remote_sender_id(), "gameReady", false)
+
+@rpc("any_peer")
+func gameReady():
+	pass

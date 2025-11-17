@@ -23,374 +23,6 @@ script = ExtResource("1_thl6s")
 
 [node name="ConnectionWindow" type="Node" parent="ConnectWindowHolder"]
 
-[node name="SyncFunctions" type="Node" parent="ConnectWindowHolder/ConnectionWindow"]
-script = ExtResource("2_53ot5")
-
-[node name="Game" type="Node" parent="ConnectWindowHolder/ConnectionWindow"]
-
-[node name="Field" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game"]
-
-[node name="PlayArea" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field"]
-
-[node name="AnimationManager" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field"]
-
-[node name="CardInspector" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field"]
-
-[node name="TextArea" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector"]
-
-[node name="Background" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector/TextArea"]
-
-[node name="ScrollContainer" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector/TextArea"]
-
-[node name="Cardtext" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector/TextArea/ScrollContainer"]
-
-[node name="TextTabGroup" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector/TextArea"]
-
-[node name="TextTab" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector/TextArea/TextTabGroup"]
-
-[node name="Arrows" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector/TextArea/TextTabGroup"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector/TextArea/TextTabGroup"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector/TextArea/TextTabGroup/Area2D"]
-
-[node name="Card" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector"]
-
-[node name="InspectorTabGroup" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector"]
-
-[node name="InspectorTab" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector/InspectorTabGroup"]
-
-[node name="Arrows" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector/InspectorTabGroup"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector/InspectorTabGroup"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/CardInspector/InspectorTabGroup/Area2D"]
-
-[node name="SearchBox" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field"]
-
-[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/SearchBox"]
-
-[node name="Control" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/SearchBox"]
-
-[node name="ScrollContainer" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/SearchBox/Control"]
-
-[node name="HBoxContainer" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/SearchBox/Control/ScrollContainer"]
-
-[node name="Label" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/SearchBox"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/SearchBox"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/SearchBox/Area2D"]
-
-[node name="Tracker" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field"]
-
-[node name="Background" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker"]
-
-[node name="DamageVal" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker"]
-
-[node name="Damage" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/DamageVal"]
-
-[node name="DamageLabel" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/DamageVal"]
-
-[node name="Plus" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/DamageVal"]
-script = ExtResource("1_6hh76")
-
-[node name="Plus" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/DamageVal/Plus"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/DamageVal/Plus"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/DamageVal/Plus/Area2D"]
-
-[node name="Minus" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/DamageVal"]
-script = ExtResource("2_5is31")
-
-[node name="Minus" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/DamageVal/Minus"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/DamageVal/Minus"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/DamageVal/Minus/Area2D"]
-
-[node name="SpeedVal" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker"]
-
-[node name="SpeedLabel" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/SpeedVal"]
-
-[node name="Plus" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/SpeedVal"]
-script = ExtResource("3_yiiyr")
-
-[node name="Plus" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/SpeedVal/Plus"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/SpeedVal/Plus"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/SpeedVal/Plus/Area2D"]
-
-[node name="Minus" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/SpeedVal"]
-script = ExtResource("4_6j1k7")
-
-[node name="Minus" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/SpeedVal/Minus"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/SpeedVal/Minus"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/SpeedVal/Minus/Area2D"]
-
-[node name="AttackZone" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker"]
-
-[node name="Speed" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/AttackZone"]
-
-[node name="High" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/AttackZone"]
-script = ExtResource("3_tbpux")
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/AttackZone/High"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/AttackZone/High/Area2D"]
-
-[node name="Mid" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/AttackZone"]
-script = ExtResource("4_3j8ku")
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/AttackZone/Mid"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/AttackZone/Mid/Area2D"]
-
-[node name="Low" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/AttackZone"]
-script = ExtResource("5_3j8ku")
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/AttackZone/Low"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/AttackZone/Low/Area2D"]
-
-[node name="ArrowsNode" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker"]
-
-[node name="Arrows" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/ArrowsNode"]
-
-[node name="ArrowArea" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/ArrowsNode"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/ArrowsNode/ArrowArea"]
-
-[node name="HealthAdjuster" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker"]
-
-[node name="RichTextLabel" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/HealthAdjuster"]
-
-[node name="LineEdit" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/HealthAdjuster"]
-
-[node name="Plus" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/HealthAdjuster"]
-
-[node name="Plus" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/HealthAdjuster/Plus"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/HealthAdjuster/Plus"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/HealthAdjuster/Plus/Area2D"]
-
-[node name="Minus" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/HealthAdjuster"]
-
-[node name="Minus" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/HealthAdjuster/Minus"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/HealthAdjuster/Minus"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/HealthAdjuster/Minus/Area2D"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/Area2D"]
-
-[node name="CollisionShape2D2" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/Area2D"]
-
-[node name="CollisionShape2D3" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/Area2D"]
-
-[node name="CollisionShape2D4" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/Area2D"]
-
-[node name="CollisionShape2D5" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/Area2D"]
-
-[node name="CollisionShape2D6" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/Area2D"]
-
-[node name="CollisionShape2D7" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/Area2D"]
-
-[node name="BlockStates" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker"]
-
-[node name="FullBlock" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/BlockStates"]
-
-[node name="PartialBlock" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/BlockStates"]
-
-[node name="Unblocked" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Tracker/BlockStates"]
-
-[node name="RivalHealth" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field"]
-
-[node name="Icon" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/RivalHealth"]
-
-[node name="Label" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/RivalHealth"]
-
-[node name="PlayerHealth" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field"]
-
-[node name="Icon" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/PlayerHealth"]
-
-[node name="Label" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/PlayerHealth"]
-
-[node name="Chat" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field"]
-script = ExtResource("1_ruubs")
-
-[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Chat"]
-
-[node name="LineEdit" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Chat"]
-
-[node name="ScrollContainer" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Chat"]
-
-[node name="RichTextLabel" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Chat/ScrollContainer"]
-
-[node name="VScrollBar" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Chat"]
-
-[node name="RichTextLabel" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Chat/VScrollBar"]
-
-[node name="DisplayChat" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Chat"]
-
-[node name="DisplayCombo" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Chat"]
-
-[node name="DiscplayLog" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/Chat"]
-
-[node name="TurnSequence" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field"]
-script = ExtResource("11_w7p2x")
-
-[node name="TurnPlayer" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/TurnSequence"]
-
-[node name="TurnSequence" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/TurnSequence"]
-
-[node name="AdvancePhase" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/TurnSequence"]
-
-[node name="AdvanceArea" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/TurnSequence/AdvancePhase"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/TurnSequence/AdvancePhase/AdvanceArea"]
-
-[node name="RevertPhase" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/TurnSequence"]
-
-[node name="RevertArea" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/TurnSequence/RevertPhase"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/TurnSequence/RevertPhase/RevertArea"]
-
-[node name="AttackSeq" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/AttackSeq"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/AttackSeq/Area2D"]
-
-[node name="EffectsWindow" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field"]
-
-[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/EffectsWindow"]
-
-[node name="X button" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/EffectsWindow"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/EffectsWindow/X button"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/EffectsWindow/X button/Area2D"]
-
-[node name="Masking" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/EffectsWindow"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/EffectsWindow/Masking"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/EffectsWindow/Masking/Area2D"]
-
-[node name="Area2D2" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/EffectsWindow/Masking"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/EffectsWindow/Masking/Area2D2"]
-
-[node name="EffectList" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/EffectsWindow"]
-
-[node name="Tab" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/EffectsWindow/EffectList"]
-
-[node name="WindowTitle" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Field/EffectsWindow"]
-
-[node name="Player" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game"]
-
-[node name="CardManager" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player"]
-script = ExtResource("1_k3tnb")
-
-[node name="Transit" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player"]
-
-[node name="Hand" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player"]
-
-[node name="Cardpool" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player"]
-
-[node name="Stage" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player"]
-
-[node name="Deck" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player"]
-
-[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player/Deck"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player/Deck"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player/Deck/Area2D"]
-
-[node name="Buttons" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player/Deck"]
-
-[node name="Discard" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player"]
-
-[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player/Discard"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player/Discard"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player/Discard/Area2D"]
-
-[node name="Buttons" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player/Discard"]
-
-[node name="Removed" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player"]
-
-[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player/Removed"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player/Removed"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player/Removed/Area2D"]
-
-[node name="Buttons" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player/Removed"]
-
-[node name="Momentum" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Player"]
-
-[node name="Rival" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game"]
-
-[node name="AnimationManager2" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival"]
-
-[node name="RivalCardManager" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival"]
-script = ExtResource("8_ittug")
-
-[node name="RivalTransit" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival"]
-script = ExtResource("9_7mha4")
-
-[node name="RivalDeck" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival"]
-script = ExtResource("9_18b0c")
-
-[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival/RivalDeck"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival/RivalDeck"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival/RivalDeck/Area2D"]
-
-[node name="Buttons" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival/RivalDeck"]
-
-[node name="RivalHand" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival"]
-
-[node name="RivalDiscard" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival"]
-
-[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival/RivalDiscard"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival/RivalDiscard"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival/RivalDiscard/Area2D"]
-
-[node name="Buttons" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival/RivalDiscard"]
-
-[node name="RivalRemoved" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival"]
-
-[node name="Sprite2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival/RivalRemoved"]
-
-[node name="Area2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival/RivalRemoved"]
-
-[node name="CollisionShape2D" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival/RivalRemoved/Area2D"]
-
-[node name="Buttons" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival/RivalRemoved"]
-
-[node name="RivalCardpool" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival"]
-
-[node name="RivalMomentum" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival"]
-
-[node name="RivalStage" type="Node" parent="ConnectWindowHolder/ConnectionWindow/Game/Rival"]
-
-[node name="InputManager" type="Node" parent="ConnectWindowHolder/ConnectionWindow"]
-
 [node name="Back" type="Node" parent="ConnectWindowHolder/ConnectionWindow"]
 
 [node name="OpenGames" type="Node" parent="ConnectWindowHolder/ConnectionWindow"]
@@ -640,3 +272,373 @@ script = ExtResource("9_18b0c")
 [node name="RivalEventColorLabel" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
 
 [node name="RivalEventColor" type="Node" parent="SettingsWindowHolder/SettingsWindow"]
+
+[node name="GameWindowHolder" type="Node" parent="."]
+
+[node name="GameWindow" type="Node" parent="GameWindowHolder"]
+
+[node name="InputManager" type="Node" parent="GameWindowHolder/GameWindow"]
+
+[node name="SyncFunctions" type="Node" parent="GameWindowHolder/GameWindow"]
+script = ExtResource("2_53ot5")
+
+[node name="Field" type="Node" parent="GameWindowHolder/GameWindow"]
+
+[node name="PlayArea" type="Node" parent="GameWindowHolder/GameWindow/Field"]
+
+[node name="AnimationManager" type="Node" parent="GameWindowHolder/GameWindow/Field"]
+
+[node name="CardInspector" type="Node" parent="GameWindowHolder/GameWindow/Field"]
+
+[node name="TextArea" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector"]
+
+[node name="Background" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector/TextArea"]
+
+[node name="ScrollContainer" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector/TextArea"]
+
+[node name="Cardtext" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector/TextArea/ScrollContainer"]
+
+[node name="TextTabGroup" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector/TextArea"]
+
+[node name="TextTab" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector/TextArea/TextTabGroup"]
+
+[node name="Arrows" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector/TextArea/TextTabGroup"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector/TextArea/TextTabGroup"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector/TextArea/TextTabGroup/Area2D"]
+
+[node name="Card" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector"]
+
+[node name="InspectorTabGroup" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector"]
+
+[node name="InspectorTab" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector/InspectorTabGroup"]
+
+[node name="Arrows" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector/InspectorTabGroup"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector/InspectorTabGroup"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/CardInspector/InspectorTabGroup/Area2D"]
+
+[node name="SearchBox" type="Node" parent="GameWindowHolder/GameWindow/Field"]
+
+[node name="Sprite2D" type="Node" parent="GameWindowHolder/GameWindow/Field/SearchBox"]
+
+[node name="Control" type="Node" parent="GameWindowHolder/GameWindow/Field/SearchBox"]
+
+[node name="ScrollContainer" type="Node" parent="GameWindowHolder/GameWindow/Field/SearchBox/Control"]
+
+[node name="HBoxContainer" type="Node" parent="GameWindowHolder/GameWindow/Field/SearchBox/Control/ScrollContainer"]
+
+[node name="Label" type="Node" parent="GameWindowHolder/GameWindow/Field/SearchBox"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/SearchBox"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/SearchBox/Area2D"]
+
+[node name="Tracker" type="Node" parent="GameWindowHolder/GameWindow/Field"]
+
+[node name="Background" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker"]
+
+[node name="DamageVal" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker"]
+
+[node name="Damage" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/DamageVal"]
+
+[node name="DamageLabel" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/DamageVal"]
+
+[node name="Plus" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/DamageVal"]
+script = ExtResource("1_6hh76")
+
+[node name="Plus" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/DamageVal/Plus"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/DamageVal/Plus"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/DamageVal/Plus/Area2D"]
+
+[node name="Minus" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/DamageVal"]
+script = ExtResource("2_5is31")
+
+[node name="Minus" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/DamageVal/Minus"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/DamageVal/Minus"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/DamageVal/Minus/Area2D"]
+
+[node name="SpeedVal" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker"]
+
+[node name="SpeedLabel" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/SpeedVal"]
+
+[node name="Plus" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/SpeedVal"]
+script = ExtResource("3_yiiyr")
+
+[node name="Plus" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/SpeedVal/Plus"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/SpeedVal/Plus"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/SpeedVal/Plus/Area2D"]
+
+[node name="Minus" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/SpeedVal"]
+script = ExtResource("4_6j1k7")
+
+[node name="Minus" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/SpeedVal/Minus"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/SpeedVal/Minus"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/SpeedVal/Minus/Area2D"]
+
+[node name="AttackZone" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker"]
+
+[node name="Speed" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/AttackZone"]
+
+[node name="High" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/AttackZone"]
+script = ExtResource("3_tbpux")
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/AttackZone/High"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/AttackZone/High/Area2D"]
+
+[node name="Mid" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/AttackZone"]
+script = ExtResource("4_3j8ku")
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/AttackZone/Mid"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/AttackZone/Mid/Area2D"]
+
+[node name="Low" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/AttackZone"]
+script = ExtResource("5_3j8ku")
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/AttackZone/Low"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/AttackZone/Low/Area2D"]
+
+[node name="ArrowsNode" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker"]
+
+[node name="Arrows" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/ArrowsNode"]
+
+[node name="ArrowArea" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/ArrowsNode"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/ArrowsNode/ArrowArea"]
+
+[node name="HealthAdjuster" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker"]
+
+[node name="RichTextLabel" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/HealthAdjuster"]
+
+[node name="LineEdit" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/HealthAdjuster"]
+
+[node name="Plus" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/HealthAdjuster"]
+
+[node name="Plus" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/HealthAdjuster/Plus"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/HealthAdjuster/Plus"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/HealthAdjuster/Plus/Area2D"]
+
+[node name="Minus" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/HealthAdjuster"]
+
+[node name="Minus" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/HealthAdjuster/Minus"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/HealthAdjuster/Minus"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/HealthAdjuster/Minus/Area2D"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/Area2D"]
+
+[node name="CollisionShape2D2" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/Area2D"]
+
+[node name="CollisionShape2D3" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/Area2D"]
+
+[node name="CollisionShape2D4" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/Area2D"]
+
+[node name="CollisionShape2D5" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/Area2D"]
+
+[node name="CollisionShape2D6" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/Area2D"]
+
+[node name="CollisionShape2D7" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/Area2D"]
+
+[node name="BlockStates" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker"]
+
+[node name="FullBlock" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/BlockStates"]
+
+[node name="PartialBlock" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/BlockStates"]
+
+[node name="Unblocked" type="Node" parent="GameWindowHolder/GameWindow/Field/Tracker/BlockStates"]
+
+[node name="RivalHealth" type="Node" parent="GameWindowHolder/GameWindow/Field"]
+
+[node name="Icon" type="Node" parent="GameWindowHolder/GameWindow/Field/RivalHealth"]
+
+[node name="Label" type="Node" parent="GameWindowHolder/GameWindow/Field/RivalHealth"]
+
+[node name="PlayerHealth" type="Node" parent="GameWindowHolder/GameWindow/Field"]
+
+[node name="Icon" type="Node" parent="GameWindowHolder/GameWindow/Field/PlayerHealth"]
+
+[node name="Label" type="Node" parent="GameWindowHolder/GameWindow/Field/PlayerHealth"]
+
+[node name="Chat" type="Node" parent="GameWindowHolder/GameWindow/Field"]
+script = ExtResource("1_ruubs")
+
+[node name="Sprite2D" type="Node" parent="GameWindowHolder/GameWindow/Field/Chat"]
+
+[node name="LineEdit" type="Node" parent="GameWindowHolder/GameWindow/Field/Chat"]
+
+[node name="ScrollContainer" type="Node" parent="GameWindowHolder/GameWindow/Field/Chat"]
+
+[node name="RichTextLabel" type="Node" parent="GameWindowHolder/GameWindow/Field/Chat/ScrollContainer"]
+
+[node name="VScrollBar" type="Node" parent="GameWindowHolder/GameWindow/Field/Chat"]
+
+[node name="RichTextLabel" type="Node" parent="GameWindowHolder/GameWindow/Field/Chat/VScrollBar"]
+
+[node name="DisplayChat" type="Node" parent="GameWindowHolder/GameWindow/Field/Chat"]
+
+[node name="DisplayCombo" type="Node" parent="GameWindowHolder/GameWindow/Field/Chat"]
+
+[node name="DiscplayLog" type="Node" parent="GameWindowHolder/GameWindow/Field/Chat"]
+
+[node name="TurnSequence" type="Node" parent="GameWindowHolder/GameWindow/Field"]
+script = ExtResource("11_w7p2x")
+
+[node name="TurnPlayer" type="Node" parent="GameWindowHolder/GameWindow/Field/TurnSequence"]
+
+[node name="TurnSequence" type="Node" parent="GameWindowHolder/GameWindow/Field/TurnSequence"]
+
+[node name="AdvancePhase" type="Node" parent="GameWindowHolder/GameWindow/Field/TurnSequence"]
+
+[node name="AdvanceArea" type="Node" parent="GameWindowHolder/GameWindow/Field/TurnSequence/AdvancePhase"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/TurnSequence/AdvancePhase/AdvanceArea"]
+
+[node name="RevertPhase" type="Node" parent="GameWindowHolder/GameWindow/Field/TurnSequence"]
+
+[node name="RevertArea" type="Node" parent="GameWindowHolder/GameWindow/Field/TurnSequence/RevertPhase"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/TurnSequence/RevertPhase/RevertArea"]
+
+[node name="AttackSeq" type="Node" parent="GameWindowHolder/GameWindow/Field"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/AttackSeq"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/AttackSeq/Area2D"]
+
+[node name="EffectsWindow" type="Node" parent="GameWindowHolder/GameWindow/Field"]
+
+[node name="Sprite2D" type="Node" parent="GameWindowHolder/GameWindow/Field/EffectsWindow"]
+
+[node name="X button" type="Node" parent="GameWindowHolder/GameWindow/Field/EffectsWindow"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/EffectsWindow/X button"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/EffectsWindow/X button/Area2D"]
+
+[node name="Masking" type="Node" parent="GameWindowHolder/GameWindow/Field/EffectsWindow"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Field/EffectsWindow/Masking"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/EffectsWindow/Masking/Area2D"]
+
+[node name="Area2D2" type="Node" parent="GameWindowHolder/GameWindow/Field/EffectsWindow/Masking"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Field/EffectsWindow/Masking/Area2D2"]
+
+[node name="EffectList" type="Node" parent="GameWindowHolder/GameWindow/Field/EffectsWindow"]
+
+[node name="Tab" type="Node" parent="GameWindowHolder/GameWindow/Field/EffectsWindow/EffectList"]
+
+[node name="WindowTitle" type="Node" parent="GameWindowHolder/GameWindow/Field/EffectsWindow"]
+
+[node name="Player" type="Node" parent="GameWindowHolder/GameWindow"]
+
+[node name="CardManager" type="Node" parent="GameWindowHolder/GameWindow/Player"]
+script = ExtResource("1_k3tnb")
+
+[node name="Transit" type="Node" parent="GameWindowHolder/GameWindow/Player"]
+
+[node name="Hand" type="Node" parent="GameWindowHolder/GameWindow/Player"]
+
+[node name="Cardpool" type="Node" parent="GameWindowHolder/GameWindow/Player"]
+
+[node name="Stage" type="Node" parent="GameWindowHolder/GameWindow/Player"]
+
+[node name="Deck" type="Node" parent="GameWindowHolder/GameWindow/Player"]
+
+[node name="Sprite2D" type="Node" parent="GameWindowHolder/GameWindow/Player/Deck"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Player/Deck"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Player/Deck/Area2D"]
+
+[node name="Buttons" type="Node" parent="GameWindowHolder/GameWindow/Player/Deck"]
+
+[node name="Discard" type="Node" parent="GameWindowHolder/GameWindow/Player"]
+
+[node name="Sprite2D" type="Node" parent="GameWindowHolder/GameWindow/Player/Discard"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Player/Discard"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Player/Discard/Area2D"]
+
+[node name="Buttons" type="Node" parent="GameWindowHolder/GameWindow/Player/Discard"]
+
+[node name="Removed" type="Node" parent="GameWindowHolder/GameWindow/Player"]
+
+[node name="Sprite2D" type="Node" parent="GameWindowHolder/GameWindow/Player/Removed"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Player/Removed"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Player/Removed/Area2D"]
+
+[node name="Buttons" type="Node" parent="GameWindowHolder/GameWindow/Player/Removed"]
+
+[node name="Momentum" type="Node" parent="GameWindowHolder/GameWindow/Player"]
+
+[node name="Rival" type="Node" parent="GameWindowHolder/GameWindow"]
+
+[node name="AnimationManager2" type="Node" parent="GameWindowHolder/GameWindow/Rival"]
+
+[node name="RivalCardManager" type="Node" parent="GameWindowHolder/GameWindow/Rival"]
+script = ExtResource("8_ittug")
+
+[node name="RivalTransit" type="Node" parent="GameWindowHolder/GameWindow/Rival"]
+script = ExtResource("9_7mha4")
+
+[node name="RivalDeck" type="Node" parent="GameWindowHolder/GameWindow/Rival"]
+script = ExtResource("9_18b0c")
+
+[node name="Sprite2D" type="Node" parent="GameWindowHolder/GameWindow/Rival/RivalDeck"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Rival/RivalDeck"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Rival/RivalDeck/Area2D"]
+
+[node name="Buttons" type="Node" parent="GameWindowHolder/GameWindow/Rival/RivalDeck"]
+
+[node name="RivalHand" type="Node" parent="GameWindowHolder/GameWindow/Rival"]
+
+[node name="RivalDiscard" type="Node" parent="GameWindowHolder/GameWindow/Rival"]
+
+[node name="Sprite2D" type="Node" parent="GameWindowHolder/GameWindow/Rival/RivalDiscard"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Rival/RivalDiscard"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Rival/RivalDiscard/Area2D"]
+
+[node name="Buttons" type="Node" parent="GameWindowHolder/GameWindow/Rival/RivalDiscard"]
+
+[node name="RivalRemoved" type="Node" parent="GameWindowHolder/GameWindow/Rival"]
+
+[node name="Sprite2D" type="Node" parent="GameWindowHolder/GameWindow/Rival/RivalRemoved"]
+
+[node name="Area2D" type="Node" parent="GameWindowHolder/GameWindow/Rival/RivalRemoved"]
+
+[node name="CollisionShape2D" type="Node" parent="GameWindowHolder/GameWindow/Rival/RivalRemoved/Area2D"]
+
+[node name="Buttons" type="Node" parent="GameWindowHolder/GameWindow/Rival/RivalRemoved"]
+
+[node name="RivalCardpool" type="Node" parent="GameWindowHolder/GameWindow/Rival"]
+
+[node name="RivalMomentum" type="Node" parent="GameWindowHolder/GameWindow/Rival"]
+
+[node name="RivalStage" type="Node" parent="GameWindowHolder/GameWindow/Rival"]
