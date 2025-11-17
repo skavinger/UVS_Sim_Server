@@ -72,3 +72,17 @@ func rivalJoined():
 @rpc("any_peer")
 func joinReply(_status):
 	pass
+
+@rpc("any_peer")
+func gameLeft():
+	if checkPair(multiplayer.get_remote_sender_id()):
+		var player1 = multiplayer.get_remote_sender_id()
+		var player2 = playerPairs[multiplayer.get_remote_sender_id()]
+		playerPairs.erase(player1)
+		playerPairs.erase(player2)
+
+func checkPair(player):
+	if playerPairs.get(player) == null:
+		return false
+	else:
+		return true
