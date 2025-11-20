@@ -31,12 +31,13 @@ func closeRoom(playerID):
 	sendUpdatedRooms()
 
 @rpc("any_peer")
-func createRoom(playerName, playerDeck, password):
+func createRoom(playerName, playerDeck, password, format):
 	print("CreateRoom Pressed by " + str(multiplayer.get_remote_sender_id()))
 	rooms[multiplayer.get_remote_sender_id()] = {
 		"players": {
 			"creatingPlayerID": multiplayer.get_remote_sender_id(),
 			"creatingPlayerName": playerName,
+			"format": format,
 			"playerDeck": playerDeck,
 			"joinedPlayer": null,
 		},
