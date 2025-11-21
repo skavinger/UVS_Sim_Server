@@ -14,3 +14,8 @@ func sendMessageToRival(message):
 func sendRivalMessageReply(answer):
 	if Server.checkPair(multiplayer.get_remote_sender_id()):
 		rpc_id(Server.playerPairs[multiplayer.get_remote_sender_id()], "sendRivalMessageReply", answer)
+
+@rpc("any_peer")
+func rivalSetTracker(speedNew, zoneNew, damageNew):
+	if Server.checkPair(multiplayer.get_remote_sender_id()):
+		rpc_id(Server.playerPairs[multiplayer.get_remote_sender_id()], "rivalSetTracker", speedNew, zoneNew, damageNew)
