@@ -19,7 +19,12 @@ func commitCard(_cardMeta):
 func readyCard(_cardMeta):
 	if Server.checkPair(multiplayer.get_remote_sender_id()):
 		rpc_id(Server.playerPairs[multiplayer.get_remote_sender_id()], "readyCard", _cardMeta)
-	
+
+@rpc("any_peer")
+func transformCard(indexID):
+	if Server.checkPair(multiplayer.get_remote_sender_id()):
+		rpc_id(Server.playerPairs[multiplayer.get_remote_sender_id()], "transformCard", indexID)
+
 @rpc("any_peer")
 func flashRivalCard(_indexID):
 	if Server.checkPair(multiplayer.get_remote_sender_id()):
